@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="assets/favicon.ico" rel="shortcut icon"/>
+  <title>momentum</title>
+  <link rel="stylesheet" href="css/owfont-regular.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/script.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <p class="audioName"></p>
+      <div class="high-controlsWrap">
+        <div class="timeline">
+          <div class="progressbar"></div>
+        </div>
+        <div class="audioTime">
+          <div class="current">0:00</div>
+          <div class="divider">&nbsp/&nbsp</div>
+          <div class="length"></div>
+        </div>
+      </div>
+      <div class="low-controlsWrap">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="volume">
+          <div class="volumeline">
+            <div class="volumebar"></div>
+          </div>
+          <div class="volume-btn"></div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="[Enter city]"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="settings">
+      <div class="setting-modal hidden">
+        <p class="setting-title">Language:</p>
+        <div class="setting-item">
+          <span>English</span>
+          <input type="radio" name="lang" value="en" checked>
+        </div>
+        <div class="setting-item">
+          <span>Russian</span>
+          <input type="radio" name="lang" value="ru">
+        </div>
+        <p class="setting-title">Background source:</p>
+        <div class="setting-item">
+          <span>GitHub</span>
+          <input type="radio" name="source" value="git" checked>
+        </div>
+        <div class="setting-item">
+          <span>Unsplash API</span>
+          <input type="radio" name="source" value="unsplash">
+        </div>
+        <div class="setting-item">
+          <span>Flickr API</span>
+          <input type="radio" name="source" value="flickr">
+        </div>
+        <div class="setting-item tag">
+          <span>Tag for API</span>
+          <input type="text" name="tag" value="" placeholder="[Enter tag]" autocomplete="off">
+        </div>
+        <p class="setting-title">Show:</p>
+        <div class="setting-item">
+          <span>Time</span>
+          <input type="checkbox" name="show" value="time">
+        </div>
+        <div class="setting-item">
+          <span>Date</span>
+          <input type="checkbox" name="show" value="date">
+        </div>
+        <div class="setting-item">
+          <span>Greeting</span>
+          <input type="checkbox" name="show" value="greeting-container">
+        </div>
+        <div class="setting-item">
+          <span>Quote</span>
+          <input type="checkbox" name="show" value="quote-wrap">
+        </div>
+        <div class="setting-item">
+          <span>Weather</span>
+          <input type="checkbox" name="show" value="weather">
+        </div>
+        <div class="setting-item">
+          <span>Audio</span>
+          <input type="checkbox" name="show" value="player">
+        </div>
+      </div>
+      <div class="setting-button"></div>
+    </div>
+    <div class="quote-wrap">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+  </footer>
+  <div class="app-info">
+    <a href="https://github.com/Prizzz" target="_blank">
+      <img class="github-logo logo" src="assets/svg/github.svg" alt="github-logo">
+    </a>
+    <span>2021</span>
+    <a href="https://rs.school/" target="_blank">
+      <img class="rs-logo logo" src="assets/svg/rs.svg" alt="rs-logo">
+    </a>
+  </div>
+</body>
+</html>
